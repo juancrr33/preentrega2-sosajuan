@@ -1,3 +1,6 @@
+*{
+    margin:0;
+}
 /*///////// Header Inicio////////*/
 .navbar-brand {
     font-size: 23px !important;
@@ -21,6 +24,7 @@ div ul li a {
 }
 
 .jumbotron {
+    box-sizing: border-box;
     background-image: url(./img/nyc-4854718_1920.jpg);
     background-position: center;
     background-size: cover;
@@ -77,6 +81,81 @@ div ul li a {
 }
 
 /*///////// Main Fin////////*/
+
+/*///// section.index inicia/////////*/
+
+.carousel__caja{
+
+    width: 100%;
+    height:auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif !important;
+    background-color: #050505;
+}
+
+.carousel__titulo{
+    padding: 30px;
+    width: 100%;
+    text-decoration: underline;
+    text-align: center;
+    background-color: #17a2b8;
+    color: white;
+
+}
+
+.venta{
+    padding: 70px;
+    width: 100%;
+    text-align: center;
+    display: grid;
+    border: 2px solid rgb(5, 5, 5);
+    background-color: #050505;
+}
+
+.venta__titulo{
+    letter-spacing: normal;
+    color: #17a2b8;
+
+}
+.venta__descripcion{
+    text-align: initial;
+    letter-spacing: normal;
+    color: #333;
+}
+.valor__propiedad{
+    text-decoration: none;
+    text-align: center;
+    padding: 5px;
+    letter-spacing: normal;
+    color: #333;
+    background-color: #17a2b8;
+    font-size: 15px;
+
+}
+.valor__propiedad:hover{
+    text-decoration: none;
+    transition: all 0.3s;
+    transform: scale(1.09);
+}
+
+.img__carrousel{
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px;
+
+}
+
+.img1{
+    background-image: url(./img/casa1.jpg);
+}
+.img2{
+    background-image: url(./img/casa2.jpg);
+}
+.img3{
+    background-image: url(./img/casa3.jpg);
+}
+
+
+/*///// section.index fin/////////*/
 
 /*///////// Footer Inicio////////*/
 
