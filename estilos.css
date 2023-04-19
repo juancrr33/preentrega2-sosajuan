@@ -1,6 +1,7 @@
-*{
-    margin:0;
+* {
+    margin: 0;
 }
+
 /*///////// Header Inicio////////*/
 .navbar-brand {
     font-size: 23px !important;
@@ -84,15 +85,15 @@ div ul li a {
 
 /*///// section.index inicia/////////*/
 
-.carousel__caja{
+.carousel__caja {
 
     width: 100%;
-    height:auto;
+    height: auto;
     font-family: Verdana, Geneva, Tahoma, sans-serif !important;
     background-color: #050505;
 }
 
-.carousel__titulo{
+.carousel__titulo {
     padding: 30px;
     width: 100%;
     text-decoration: underline;
@@ -102,7 +103,7 @@ div ul li a {
 
 }
 
-.venta{
+.venta {
     padding: 70px;
     width: 100%;
     text-align: center;
@@ -111,17 +112,19 @@ div ul li a {
     background-color: #050505;
 }
 
-.venta__titulo{
+.venta__titulo {
     letter-spacing: normal;
     color: #17a2b8;
 
 }
-.venta__descripcion{
+
+.venta__descripcion {
     text-align: initial;
     letter-spacing: normal;
     color: #333;
 }
-.valor__propiedad{
+
+.valor__propiedad {
     text-decoration: none;
     text-align: center;
     padding: 5px;
@@ -129,28 +132,32 @@ div ul li a {
     color: #333;
     background-color: #17a2b8;
     font-size: 15px;
+    border-radius: 3px;
 
 }
-.valor__propiedad:hover{
+
+.valor__propiedad:hover {
     text-decoration: none;
     transition: all 0.3s;
     transform: scale(1.09);
 }
 
-.img__carrousel{
+.img__carrousel {
     background-position: center;
     background-size: cover;
     border-radius: 5px;
 
 }
 
-.img1{
+.img1 {
     background-image: url(./img/casa1.jpg);
 }
-.img2{
+
+.img2 {
     background-image: url(./img/casa2.jpg);
 }
-.img3{
+
+.img3 {
     background-image: url(./img/casa3.jpg);
 }
 
@@ -350,3 +357,509 @@ button[type="submit"] {
 }
 
 /*//// Section Fin Contacto///*/
+
+/*//// Servicios inicia ///*/
+
+.servicio__titulo {
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: underline;
+    color: #17a2b8;
+    border-bottom: solid 2px #17a2b8;
+    background-color: #c9eff5;
+    margin-bottom: 0;
+    grid-column: 1/3;
+    grid-row: 1/2;
+}
+
+.cajaServicio {
+    display: grid;
+    grid-template-columns: repeat(2fr 1fr);
+    grid-template-rows: repeat(4 1fr);
+}
+
+.imgAlquiler {
+    width: 100%;
+    height: 550px;
+    background-image: url(./img/alquileres.jpg);
+    background-position: center;
+    background-size: cover;
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+.imgSold {
+    width: 100%;
+    height: 550px;
+    background-size: cover;
+    background-position: center;
+    background-image: url(./img/ventadeporpiedades.jpg);
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+
+.imgTasacion {
+    width: 100%;
+    height: 550px;
+    background-size: cover;
+    background-position: center;
+    background-image: url(./img/tasaciones.jpg);
+    grid-column: 2/3;
+    grid-row: 4/5;
+}
+
+
+.descripcionAlquiler {
+    width: 100%;
+    height: 550px;
+    padding: 20px;
+    background-color: #c9eff5;
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+.descripcionSold {
+    width: 100%;
+    height: 550px;
+    padding: 20px;
+    background-color: #c9eff5;
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+
+.descripcionTasacion {
+    width: 100%;
+    height: 550px;
+    padding: 20px;
+    background-color: #c9eff5;
+    grid-column: 1/2;
+    grid-row: 4/5;
+}
+
+.servicioTexto {
+    padding: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.servicioConsulta {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 100%;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 20px;
+    border: 2px solid #333;
+    text-align: center;
+    border-radius: 25px;
+    background-color: #000000;
+    color: white;
+}
+
+.servicioConsulta:hover {
+    text-decoration: none;
+}
+
+/*//// Servicios Fin ///*/
+
+@media only screen and (max-width: 550px){
+
+    .navbar-brand {
+        font-size: 15px !important;
+        font-family: Verdana, Geneva, Tahoma, sans-serif !important;
+        text-shadow: 0px 0px 5px black !important;
+    }
+
+    .container h1 {
+        font-size: 30px !important;
+        font-family: Verdana, Geneva, Tahoma, sans-serif !important;
+        text-shadow: 0px 0px 9px black !important;
+        color: #17a2b8;
+    }
+
+    .container h1 span {
+        color: black;
+    }
+
+    .container p {
+        font-size: 15px !important;
+        font-family: Verdana, Geneva, Tahoma, sans-serif !important;
+        text-shadow: 0px 0px 5px black !important;
+        color: white;
+    }
+
+    .servicios {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .servicios div {
+        height: auto;
+        text-align: center;
+        border: 1px grey solid;
+        border-left: none;
+        border-right: none;
+        padding: 50px;
+        background-color: rgb(196, 200, 203);
+    }
+
+    .servicios div a {
+        text-decoration: none;
+        color: black;
+        font-size: 29px;
+    }
+
+    .servicios div:hover {
+        transform: scale(1.09);
+        transition: all 3s;
+    }
+
+    /*///// section.index inicia/////////*/
+
+
+    .carousel__titulo {
+        font-size: 18px;
+        padding: 30px;
+        width: 100%;
+        text-decoration: underline;
+        text-align: center;
+        background-color: #17a2b8;
+        color: white;
+
+    }
+
+    .venta {
+        padding: 70px;
+        width: 100%;
+        text-align: center;
+        display: grid;
+        border: 2px solid rgb(5, 5, 5);
+        background-color: #050505;
+    }
+
+    .venta__titulo {
+        letter-spacing: normal;
+        color: #17a2b8;
+
+    }
+
+    .venta__descripcion {
+        height: auto;
+        font-size: 14px;
+        text-align: initial;
+        letter-spacing: normal;
+        color: #333;
+    }
+
+    .valor__propiedad {
+        text-decoration: none;
+        text-align: center;
+        padding: 5px;
+        letter-spacing: normal;
+        color: #333;
+        background-color: #17a2b8;
+        font-size: 14px;
+        border-radius: 3px;
+
+    }
+
+    .valor__propiedad:hover {
+        text-decoration: none;
+        transition: all 0.3s;
+        transform: scale(1.09);
+    }
+
+    .img__carrousel {
+        height: 300px;
+        width: 300px;
+        background-position: center;
+        background-size: cover;
+        border-radius: 5px;
+        align-items: center;
+
+    }
+
+    /*///////// Footer Inicio////////*/
+
+    footer {
+
+        background-color: #333;
+        color: #fff;
+        padding: 30px 0;
+    }
+
+    .footerCaja {
+        width: 100%;
+        height: auto;
+        display: grid;
+        grid-template-columns: 1fr;
+
+    }
+
+    footer h3 {
+
+        color: #fff;
+        font-size: 18px;
+        text-align: center;
+    }
+
+    footer div ul li a {
+
+        color: #fff;
+        font-size: 18px !important;
+    }
+
+    footer p {
+
+        font-size: 12px;
+    }
+
+    .container p {
+        color: #17a2b8;
+        font-size: 12px !important;
+        text-align: center;
+    }
+
+    .footerSuscribirse {
+        padding: 20px;
+    }
+
+    .footerSuscribirse p {
+        text-align: start;
+
+
+    }
+
+    footer input[type="email"] {
+
+        width: 100%;
+        padding: 10px;
+        border-radius: 4px;
+        border: none;
+        margin-bottom: 10px;
+        text-align: start;
+    }
+
+    footer button[type="submit"] {
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        padding: 10px 20px;
+        font-size: 13px;
+    }
+
+    div div p {
+        text-align: center;
+    }
+
+    div div div {
+        width: 100%;
+        height: auto;
+        text-align: justify;
+        color: #17a2b8;
+        display: flex;
+        justify-content: center;
+        font-size: 25px;
+        letter-spacing: 1em !important;
+
+    }
+
+    /*///////// Footer Fin////////*/
+
+    /*////Main Nosotros Inicia/////*/
+    .containerN {
+        height: auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        background-color: #aad5db;
+    }
+
+    .containerN .img {
+        width: 100%;
+        background-image: url(./img/equipo.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+
+    .containerN .descripcion p {
+        width: 100%;
+        padding: 20px;
+        text-align: center;
+        font-size: 12px;
+        color: black !important;
+        text-shadow: none !important;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    .containerN .descripcion h3 {
+        width: 100%;
+        padding: 15px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-align: center;
+    }
+
+    .nuestraMision {
+        width: 100%;
+        text-align: center;
+
+    }
+
+    .nuestraMision h3 {
+        width: 100%;
+        padding: 20px;
+        text-align: center;
+        text-decoration: underline;
+        color: #007bff;
+    }
+
+    .nuestraMision p {
+        padding: 20px;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    /*////Main Nosotros Fin/////*/
+    .servicio__titulo {
+        padding: 20px;
+        width: 100%;
+        height: 100px;
+        font-size: 18px;
+        text-align: center;
+        text-decoration: underline;
+        color: #17a2b8;
+        border-bottom: solid 2px #17a2b8;
+        background-color: #c9eff5;
+        margin-bottom: 0;
+    }
+
+    .cajaServicio {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        background-color: #c9eff5;
+
+    }
+
+    .imgAlquiler {
+        background-image: none;
+
+    }
+
+    .imgSold {
+        background-image: none;
+    }
+
+    .imgTasacion {
+        background-image: none;
+
+    }
+
+
+    .descripcionAlquiler {
+        margin-top: 40px;
+        width: 100%;
+        height: auto;
+        padding: 20px;
+        background-color: #c9eff5;
+        grid-column: 1/2;
+        grid-row: 1/2;
+
+    }
+
+    .descripcionSold {
+        width: 100%;
+        height: auto;
+        padding: 20px;
+        background-color: #c9eff5;
+        grid-column: 1/2;
+        grid-row: 2/3;
+
+    }
+
+    .descripcionTasacion {
+        width: 100%;
+        height: auto;
+        padding: 20px;
+        background-color: #c9eff5;
+        grid-column: 1/2;
+        grid-row: 3/4;
+
+    }
+
+    .servicioTexto {
+        padding: 20px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    .servicioConsulta {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        width: 100%;
+        text-decoration: none;
+        padding: 10px;
+        font-size: 20px;
+        border: 2px solid #333;
+        text-align: center;
+        border-radius: 25px;
+        background-color: #000000;
+        color: white;
+    }
+
+    .servicioConsulta:hover {
+        text-decoration: none;
+    }
+
+    /*//// Servicios Fin ///*/
+
+    /*//// Section Inicia Contacto///*/
+    body {
+        background-color: #46a6b3;
+    }
+
+    .contenedor {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 15px;
+        padding: 20px;
+        background-color: #ffffff;
+        border-radius: 5px;
+        font-size: 15px !important;
+    }
+
+    .imagen {
+        background-image: none
+    }
+
+    .form-group {
+        margin-bottom: 20px;
+        font-size: 13px;
+    }
+
+    label {
+        display: block;
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    textarea {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        border: none;
+        border-radius: 3px;
+    }
+
+    button[type="submit"] {
+        background-color: #7cd0db;
+        color: #ffffff;
+        border: none;
+        border-radius: 3px;
+        padding: 10px 20px;
+    }
+
+    /*//// Section Fin Contacto///*/
+}
