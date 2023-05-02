@@ -231,7 +231,7 @@ footer button[type="submit"] {
     border-radius: 4px;
     padding: 10px 20px;
     font-size: 13px;
-}
+    }
 
 div div p {
     text-align: center;
@@ -518,14 +518,14 @@ div div div {
     }
 
     .descripcionSold {
-        @extend .descripcionAlquiler 
+        @extend .descripcionAlquiler ;
         grid-column: 1/2;
         grid-row: 2/3;
 
     }
 
     .descripcionTasacion {
-        @extend .descripcionAlquiler 
+        @extend .descripcionAlquiler ;
         grid-column: 1/2;
         grid-row: 3/4;
 
@@ -698,13 +698,15 @@ div div div {
     }
 
     .imgSold {
-        @extend .imgAlquiler background-image: url(./img/ventadeporpiedades.jpg);
+        @extend .imgAlquiler;
+        background-image: url(./img/ventadeporpiedades.jpg);
         grid-column: 1/2;
         grid-row: 3/4;
     }
 
     .imgTasacion {
-        @extend .imgAlquiler background-image: url(./img/tasaciones.jpg);
+        @extend .imgAlquiler;
+        background-image: url(./img/tasaciones.jpg);
         grid-column: 2/3;
         grid-row: 4/5;
     }
@@ -720,13 +722,13 @@ div div div {
     }
 
     .descripcionSold {
-        @extend .descripcionAlquiler 
+        @extend .descripcionAlquiler; 
         grid-column: 2/3;
         grid-row: 3/4;
     }
 
     .descripcionTasacion {
-        @extend .descripcionAlquiler 
+        @extend .descripcionAlquiler;
         grid-column: 1/2;
         grid-row: 4/5;
     }

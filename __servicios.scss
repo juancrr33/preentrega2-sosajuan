@@ -30,54 +30,40 @@
 }
 
 .imgSold {
-    width: 100%;
-    height: auto;
-    background-size: cover;
-    background-position: center;
+    @extend .imgAlquiler;
     background-image: url(./img/ventadeporpiedades.jpg);
     grid-column: 1/2;
     grid-row: 3/4;
 }
 
 .imgTasacion {
-    width: 100%;
-    height: auto;
-    background-size: cover;
-    background-position: center;
+    @extend .imgAlquiler;
     background-image: url(./img/tasaciones.jpg);
     grid-column: 2/3;
     grid-row: 4/5;
 }
 
-
 .descripcionAlquiler {
     width: 100%;
     height: auto;
     padding: 20px;
+    color: $color2;
     background-color: $color1;
     grid-column: 1/2;
     grid-row: 2/3;
-    color: $color2;
+
 }
 
 .descripcionSold {
-    width: 100%;
-    height: auto;
-    padding: 20px;
-    background-color: $color1;
+    @extend .descripcionAlquiler;
     grid-column: 2/3;
     grid-row: 3/4;
-    color: $color2;
 }
 
 .descripcionTasacion {
-    width: 100%;
-    height: auto;
-    padding: 20px;
-    background-color: $color1;
+    @extend .descripcionAlquiler;
     grid-column: 1/2;
     grid-row: 4/5;
-    color: $color2;
 }
 
 .servicioTexto {

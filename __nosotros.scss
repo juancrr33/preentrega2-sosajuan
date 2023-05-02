@@ -4,32 +4,29 @@
     grid-template-columns: 1fr 1fr;
     grid-gap: 10px;
     background-color: $color1;
-}
-
-.containerN .img {
-    width: 100%;
-    height: auto;
-    background-image: url(./img/equipo.jpg);
-    background-position: center;
-    background-size: cover;
-}
-
-.containerN .descripcion p {
-    width: 100%;
-    height: auto;
-    padding: 20px;
-    text-align: center;
-    font-size: 15px;
-    color: $color2 !important;
-    text-shadow: none !important;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    box-sizing: border-box;
-}
-
-.containerN .descripcion h3 {
-    padding: 20px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-align: center;
+    .img {
+        width: 100%;
+        height: auto;
+        background-image: url(./img/equipo.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+    .descripcion p {
+        width: 100%;
+        height: auto;
+        padding: 20px;
+        text-align: center;
+        font-size: 15px;
+        color: $color2 !important;
+        text-shadow: none !important;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        box-sizing: border-box;
+    }
+    .descripcion h3 {
+        padding: 20px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-align: center;
+    }
 }
 
 .nuestraMision {
@@ -37,19 +34,16 @@
     width: 100%;
     align-items: center;
     text-align: center;
-
-}
-
-.nuestraMision h3 {
-    width: 100%;
-    padding: 20px;
-    text-align: center;
-    text-decoration: underline;
-    color: $color3;
-}
-
-.nuestraMision p {
-    padding: 20px;
-    margin-left: 10%;
-    margin-right: 10%;
+    h3 {
+        width: 100%;
+        padding: 20px;
+        text-align: center;
+        text-decoration: underline;
+        color: $color3;
+    }
+    p {
+        padding: 20px;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
 }
