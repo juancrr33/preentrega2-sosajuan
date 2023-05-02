@@ -1,13 +1,13 @@
-/*//// Servicios inicia ///*/
-
 .servicio__titulo {
     padding: 20px;
     font-size: 30px;
+    width: 100%;
+    height: auto;
     text-align: center;
     text-decoration: underline;
-    color: $color2;
+    color: $color1;
     border-bottom: solid 2px $color4;
-    background-color: $color1;
+    background-image:linear-gradient($color2, $color3);
     margin-bottom: 0;
     grid-column: 1/3;
     grid-row: 1/2;
@@ -54,27 +54,30 @@
     width: 100%;
     height: auto;
     padding: 20px;
-    background-color: $color3;
+    background-color: $color1;
     grid-column: 1/2;
     grid-row: 2/3;
+    color: $color2;
 }
 
 .descripcionSold {
     width: 100%;
     height: auto;
     padding: 20px;
-    background-color: $color3;
+    background-color: $color1;
     grid-column: 2/3;
     grid-row: 3/4;
+    color: $color2;
 }
 
 .descripcionTasacion {
     width: 100%;
-    height: 550px;
+    height: auto;
     padding: 20px;
-    background-color: $color3;
+    background-color: $color1;
     grid-column: 1/2;
     grid-row: 4/5;
+    color: $color2;
 }
 
 .servicioTexto {
@@ -99,4 +102,3 @@
     text-decoration: none;
 }
 
-/*//// Servicios Fin ///*/

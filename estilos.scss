@@ -3,12 +3,18 @@
 }
 
 //Paleta Colores//
-    $color1:#f5f8f9;
-    $color2: #25355a;
-    $color3:#2841b3;
-    $color4: #f70100;
+$color1: #f5f8f9;
+$color2: #25355a;
+$color3: #2841b3;
+$color4: #f70100;
 
 /*///////// Header Inicio////////*/
+header {
+    nav {
+        background-image: linear-gradient($color2, $color1);
+    }
+}
+
 .navbar-brand {
     font-size: 23px !important;
     font-family: Verdana, Geneva, Tahoma, sans-serif !important;
@@ -16,8 +22,8 @@
 }
 
 .navbar-brand span {
-    color: black;
-    text-shadow: 0px 0px 5px white !important;
+    color: $color4;
+    text-shadow: 0px 0px 5px $color2 !important;
 }
 
 button i {
@@ -37,24 +43,25 @@ div ul li a {
     background-size: cover;
     width: 100%;
     height: 690px;
+
 }
 
 .container h1 {
     font-size: 50px !important;
     font-family: Verdana, Geneva, Tahoma, sans-serif !important;
     text-shadow: 0px 0px 9px black !important;
-    color:$color3;
+    color: $color3;
 }
 
 .container h1 span {
-    color:$color3;
+    color: $color3;
 }
 
 .container p {
     font-size: 20px !important;
     font-family: Verdana, Geneva, Tahoma, sans-serif !important;
     text-shadow: 0px 0px 5px black !important;
-    color:$color1;
+    color: $color1;
 }
 
 
@@ -69,16 +76,17 @@ div ul li a {
 
 .servicios div {
     text-align: center;
-    border: 1px $color2 solid;
+    border: 1px $color1 solid;
     border-left: none;
     border-right: none;
     padding: 50px;
-    background-color:$color1;
+    background-image: linear-gradient($color3, $color2);
+    color: $color1;
 }
 
 .servicios div a {
     text-decoration: none;
-    color: black;
+    color: $color1;
     font-size: 29px;
 }
 
@@ -92,7 +100,6 @@ div ul li a {
 /*///// section.index inicia/////////*/
 
 .carousel__caja {
-
     width: 100%;
     height: auto;
     font-family: Verdana, Geneva, Tahoma, sans-serif !important;
@@ -106,7 +113,6 @@ div ul li a {
     text-align: center;
     background-color: $color1;
     color: $color3;
-
 }
 
 .venta {
@@ -121,7 +127,6 @@ div ul li a {
 .venta__titulo {
     letter-spacing: normal;
     color: $color1;
-
 }
 
 .venta__descripcion {
@@ -135,11 +140,10 @@ div ul li a {
     text-align: center;
     padding: 5px;
     letter-spacing: normal;
-    color: #333;
-    background-color: $color4;
+    color: $color1;
+    background-color: $color3;
     font-size: 15px;
     border-radius: 3px;
-
 }
 
 .valor__propiedad:hover {
@@ -174,9 +178,21 @@ div ul li a {
 
 footer {
 
-    background-color: $color3;
+    background-image: linear-gradient($color3, $color2);
     color: $color4;
     padding: 30px 0;
+    h3 {
+        color: $color1;
+        font-size: 20px;
+        text-align: center;
+    }
+    p {
+        font-size: 12px;
+    }
+    div ul li a {
+        color: $color4;
+        font-size: 14px !important;
+    }
 }
 
 .footerCaja {
@@ -186,38 +202,16 @@ footer {
     justify-content: space-evenly !important;
 }
 
-footer h3 {
-
-    color: $color3;
-    font-size: 20px;
-    text-align: center;
-}
-
-footer div ul li a {
-
-    color: $color4;
-    font-size: 14px !important;
-}
-
-footer p {
-
-    font-size: 12px;
-}
-
 .container p {
-    color: $color3;
+    color: $color1;
     font-size: 13px !important;
     text-align: center;
 }
-
 .footerSuscribirse {
     padding: 20px;
-}
-
-.footerSuscribirse p {
-    text-align: start;
-
-
+    p {
+        text-align: start;
+    }
 }
 
 footer input[type="email"] {
@@ -231,8 +225,8 @@ footer input[type="email"] {
 }
 
 footer button[type="submit"] {
-    background-color:$color3;
-    color:$color4;
+    background-color: $color3;
+    color: $color4;
     border: none;
     border-radius: 4px;
     padding: 10px 20px;
@@ -253,10 +247,13 @@ div div div {
     font-size: 20px;
     letter-spacing: 1em !important;
 
+    a .fa-brands {
+        color: $color1 !important;
+    }
+
 }
 
 /*///////// Footer Fin////////*/
-
 
 @media only screen and (max-width: 550px) {
 
@@ -270,103 +267,85 @@ div div div {
         font-size: 30px !important;
         font-family: Verdana, Geneva, Tahoma, sans-serif !important;
         text-shadow: 0px 0px 9px black !important;
-        color: #17a2b8;
+        color: $color2;
+        span {
+            color: black;
+        }
     }
-
-    .container h1 span {
-        color: black;
-    }
-
     .container p {
         font-size: 15px !important;
         font-family: Verdana, Geneva, Tahoma, sans-serif !important;
         text-shadow: 0px 0px 5px black !important;
-        color: white;
+        color: $color4;
     }
-
     .servicios {
         display: flex;
         justify-content: space-around;
         flex-direction: column;
         height: auto;
     }
-
     .servicios div {
         height: auto;
         text-align: center;
-        border: 1px grey solid;
+        border: 1px $color4 solid;
         border-left: none;
         border-right: none;
         padding: 50px;
-        background-color: rgb(196, 200, 203);
+        background-color: $color2;
     }
-
     .servicios div a {
         text-decoration: none;
-        color: black;
+        color: $color1;
         font-size: 29px;
     }
-
     .servicios div:hover {
         transform: scale(1.09);
         transition: all 3s;
     }
-
     /*///// section.index inicia/////////*/
-
-
     .carousel__titulo {
         font-size: 18px;
         padding: 30px;
         width: 100%;
         text-decoration: underline;
         text-align: center;
-        background-color: #17a2b8;
-        color: white;
-
+        background-color: $color1;
+        color: $color2;
     }
-
     .venta {
         padding: 70px;
         width: 100%;
         text-align: center;
         display: grid;
         border: 2px solid rgb(5, 5, 5);
-        background-color: #050505;
+        background-color: $color2;
     }
-
     .venta__titulo {
         letter-spacing: normal;
-        color: #17a2b8;
-
+        color: $color1;
     }
-
     .venta__descripcion {
         height: auto;
         font-size: 14px;
         text-align: initial;
         letter-spacing: normal;
-        color: #333;
+        color: $color1;
     }
-
     .valor__propiedad {
         text-decoration: none;
         text-align: center;
         padding: 5px;
         letter-spacing: normal;
-        color: #333;
-        background-color: #17a2b8;
+        color: $color1;
+        background-color: $color3;
         font-size: 14px;
         border-radius: 3px;
-
     }
-
     .valor__propiedad:hover {
         text-decoration: none;
         transition: all 0.3s;
         transform: scale(1.09);
     }
-
     .img__carrousel {
         height: 300px;
         width: 300px;
@@ -374,88 +353,70 @@ div div div {
         background-size: cover;
         border-radius: 5px;
         align-items: center;
-
     }
-
     /*///////// Footer Inicio////////*/
-
     footer {
-
-        background-color: #333;
+        background-color: $color3;
         color: #fff;
         padding: 30px 0;
+        h3 {
+            color: #fff;
+            font-size: 18px;
+            text-align: center;
+        }
+        p {
+            font-size: 12px;
+        }
+        input[type="email"] {
+            width: 100%;
+            padding: 10px;
+            border-radius: 4px;
+            border: none;
+            margin-bottom: 10px;
+            text-align: start;
+        }
+        button[type="submit"] {
+            background-color: $color3;
+            color: $color4;
+            border: none;
+            border-radius: 4px;
+            padding: 10px 20px;
+            font-size: 13px;
+        }
+    
     }
-
     .footerCaja {
         width: 100%;
         height: auto;
         display: grid;
         grid-template-columns: 1fr;
+        
 
     }
-
-    footer h3 {
-
-        color: #fff;
-        font-size: 18px;
-        text-align: center;
-    }
-
     footer div ul li a {
-
-        color: #fff;
+        color: $color1;
         font-size: 18px !important;
     }
-
-    footer p {
-
-        font-size: 12px;
-    }
-
     .container p {
-        color: #17a2b8;
+        color: $color1;
         font-size: 12px !important;
         text-align: center;
     }
-
     .footerSuscribirse {
         padding: 20px;
-    }
-
-    .footerSuscribirse p {
-        text-align: start;
-
-
-    }
-
-    footer input[type="email"] {
-
-        width: 100%;
-        padding: 10px;
-        border-radius: 4px;
-        border: none;
-        margin-bottom: 10px;
-        text-align: start;
-    }
-
-    footer button[type="submit"] {
-        background-color: #007bff;
-        color: #fff;
-        border: none;
-        border-radius: 4px;
-        padding: 10px 20px;
-        font-size: 13px;
+        p {
+            text-align: start;
+        }
     }
 
     div div p {
         text-align: center;
     }
-
     div div div {
         width: 100%;
         height: auto;
         text-align: justify;
-        color: #17a2b8;
+        color: $color1;
         display: flex;
         justify-content: center;
         font-size: 25px;
@@ -470,72 +431,63 @@ div div div {
         height: auto;
         display: grid;
         grid-template-columns: 1fr;
-        background-color: #aad5db;
+        background-color: $color1;
+        .img {
+            width: 100%;
+            background-image: url(./img/equipo.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+        .descripcion p {
+            width: 100%;
+            padding: 20px;
+            text-align: center;
+            font-size: 12px;
+            color: black !important;
+            text-shadow: none !important;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .descripcion h3 {
+            width: 100%;
+            padding: 15px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            text-align: center;
+        }
     }
-
-    .containerN .img {
-        width: 100%;
-        background-image: url(./img/equipo.jpg);
-        background-position: center;
-        background-size: cover;
-    }
-
-    .containerN .descripcion p {
-        width: 100%;
-        padding: 20px;
-        text-align: center;
-        font-size: 12px;
-        color: black !important;
-        text-shadow: none !important;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-    }
-
-    .containerN .descripcion h3 {
-        width: 100%;
-        padding: 15px;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        text-align: center;
-    }
-
     .nuestraMision {
         width: 100%;
         text-align: center;
-
+        h3 {
+            width: 100%;
+            padding: 20px;
+            text-align: center;
+            text-decoration: underline;
+            color: $color1;
+        }
+        p {
+            padding: 20px;
+            margin-left: 10%;
+            margin-right: 10%;
+        }
     }
-
-    .nuestraMision h3 {
-        width: 100%;
-        padding: 20px;
-        text-align: center;
-        text-decoration: underline;
-        color: #007bff;
-    }
-
-    .nuestraMision p {
-        padding: 20px;
-        margin-left: 10%;
-        margin-right: 10%;
-    }
-
     /*////Main Nosotros Fin/////*/
+        /*//// Servicios Inicia ///*/
     .servicio__titulo {
         padding: 20px;
         width: 100%;
-        height: 100px;
         font-size: 18px;
         text-align: center;
         text-decoration: underline;
-        color: #17a2b8;
-        border-bottom: solid 2px #17a2b8;
-        background-color: #c9eff5;
-        margin-bottom: 0;
+        color: $color1;
+        border-bottom: solid 2px $color1;
+        background-color: $color2;
     }
 
     .cajaServicio {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(2, 1fr);
-        background-color: #c9eff5;
+        background-color: $color1;
 
     }
 
@@ -555,31 +507,25 @@ div div div {
 
 
     .descripcionAlquiler {
-        margin-top: 40px;
+        // margin-top: 40px;
         width: 100%;
         height: auto;
         padding: 20px;
-        background-color: #c9eff5;
+        background-color: $color1;
         grid-column: 1/2;
         grid-row: 1/2;
 
     }
 
     .descripcionSold {
-        width: 100%;
-        height: auto;
-        padding: 20px;
-        background-color: #c9eff5;
+        @extend .descripcionAlquiler 
         grid-column: 1/2;
         grid-row: 2/3;
 
     }
 
     .descripcionTasacion {
-        width: 100%;
-        height: auto;
-        padding: 20px;
-        background-color: #c9eff5;
+        @extend .descripcionAlquiler 
         grid-column: 1/2;
         grid-row: 3/4;
 
@@ -669,33 +615,33 @@ div div div {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         background-color: #aad5db;
-    }
 
-    .containerN .img {
-        height: auto;
-        width: 100%;
-        background-image: url(./img/equipo.jpg);
-        background-position: center;
-        background-size: cover;
-        grid-column: 2/4;
-        grid-row: 1/2;
-    }
+        .img {
+            height: auto;
+            width: 100%;
+            background-image: url(./img/equipo.jpg);
+            background-position: center;
+            background-size: cover;
+            grid-column: 2/4;
+            grid-row: 1/2;
+        }
 
-    .containerN .descripcion p {
-        padding: 20px;
-        text-align: center;
-        font-size: 15px;
-        color: black !important;
-        text-shadow: none !important;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        grid-column: 1/2;
-        grid-row: 2/3;
-    }
+        .descripcion p {
+            padding: 20px;
+            text-align: center;
+            font-size: 15px;
+            color: black !important;
+            text-shadow: none !important;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            grid-column: 1/2;
+            grid-row: 2/3;
+        }
 
-    .containerN .descripcion h3 {
-        padding: 20px;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        text-align: center;
+        .descripcion h3 {
+            padding: 20px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            text-align: center;
+        }
     }
 
     .nuestraMision {
@@ -703,21 +649,21 @@ div div div {
         align-items: center;
         text-align: center;
 
+        h3 {
+            width: 100%;
+            padding: 20px;
+            text-align: center;
+            text-decoration: underline;
+            color: #007bff;
+        }
+
+        p {
+            padding: 20px;
+            margin-left: 10%;
+            margin-right: 10%;
+        }
     }
 
-    .nuestraMision h3 {
-        width: 100%;
-        padding: 20px;
-        text-align: center;
-        text-decoration: underline;
-        color: #007bff;
-    }
-
-    .nuestraMision p {
-        padding: 20px;
-        margin-left: 10%;
-        margin-right: 10%;
-    }
 
     /*////Main Nosotros Fin/////*/
     /*//// Servicios inicia ///*/
@@ -752,21 +698,13 @@ div div div {
     }
 
     .imgSold {
-        width: 100%;
-        height: auto;
-        background-size: cover;
-        background-position: center;
-        background-image: url(./img/ventadeporpiedades.jpg);
+        @extend .imgAlquiler background-image: url(./img/ventadeporpiedades.jpg);
         grid-column: 1/2;
         grid-row: 3/4;
     }
 
     .imgTasacion {
-        width: 100%;
-        height: auto;
-        background-size: cover;
-        background-position: center;
-        background-image: url(./img/tasaciones.jpg);
+        @extend .imgAlquiler background-image: url(./img/tasaciones.jpg);
         grid-column: 2/3;
         grid-row: 4/5;
     }
@@ -776,25 +714,19 @@ div div div {
         width: 100%;
         height: auto;
         padding: 20px;
-        background-color: #c9eff5;
+        background-color: $color1;
         grid-column: 1/2;
         grid-row: 2/3;
     }
 
     .descripcionSold {
-        width: 100%;
-        height: auto;
-        padding: 20px;
-        background-color: #c9eff5;
+        @extend .descripcionAlquiler 
         grid-column: 2/3;
         grid-row: 3/4;
     }
 
     .descripcionTasacion {
-        width: 100%;
-        height: auto;
-        padding: 20px;
-        background-color: #c9eff5;
+        @extend .descripcionAlquiler 
         grid-column: 1/2;
         grid-row: 4/5;
     }
@@ -821,10 +753,10 @@ div div div {
     .servicioConsulta:hover {
         text-decoration: none;
     }
-
-    /*//// Servicios Fin ///*/
 }
 
-@import url(./__servicios.scss);
-@import url(./__nosotros.scss);
-@import url(./__contacto.scss);
+@import'__servicios';
+
+@import'__nosotros';
+
+@import'__contacto';
