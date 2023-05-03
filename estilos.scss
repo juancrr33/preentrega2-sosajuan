@@ -181,14 +181,17 @@ footer {
     background-image: linear-gradient($color3, $color2);
     color: $color4;
     padding: 30px 0;
+
     h3 {
         color: $color1;
         font-size: 20px;
         text-align: center;
     }
+
     p {
         font-size: 12px;
     }
+
     div ul li a {
         color: $color4;
         font-size: 14px !important;
@@ -207,8 +210,10 @@ footer {
     font-size: 13px !important;
     text-align: center;
 }
+
 .footerSuscribirse {
     padding: 20px;
+
     p {
         text-align: start;
     }
@@ -231,7 +236,7 @@ footer button[type="submit"] {
     border-radius: 4px;
     padding: 10px 20px;
     font-size: 13px;
-    }
+}
 
 div div p {
     text-align: center;
@@ -268,22 +273,26 @@ div div div {
         font-family: Verdana, Geneva, Tahoma, sans-serif !important;
         text-shadow: 0px 0px 9px black !important;
         color: $color2;
+
         span {
             color: black;
         }
     }
+
     .container p {
         font-size: 15px !important;
         font-family: Verdana, Geneva, Tahoma, sans-serif !important;
         text-shadow: 0px 0px 5px black !important;
         color: $color4;
     }
+
     .servicios {
         display: flex;
         justify-content: space-around;
         flex-direction: column;
         height: auto;
     }
+
     .servicios div {
         height: auto;
         text-align: center;
@@ -293,15 +302,18 @@ div div div {
         padding: 50px;
         background-color: $color2;
     }
+
     .servicios div a {
         text-decoration: none;
         color: $color1;
         font-size: 29px;
     }
+
     .servicios div:hover {
         transform: scale(1.09);
         transition: all 3s;
     }
+
     /*///// section.index inicia/////////*/
     .carousel__titulo {
         font-size: 18px;
@@ -312,6 +324,7 @@ div div div {
         background-color: $color1;
         color: $color2;
     }
+
     .venta {
         padding: 70px;
         width: 100%;
@@ -320,10 +333,12 @@ div div div {
         border: 2px solid rgb(5, 5, 5);
         background-color: $color2;
     }
+
     .venta__titulo {
         letter-spacing: normal;
         color: $color1;
     }
+
     .venta__descripcion {
         height: auto;
         font-size: 14px;
@@ -331,6 +346,7 @@ div div div {
         letter-spacing: normal;
         color: $color1;
     }
+
     .valor__propiedad {
         text-decoration: none;
         text-align: center;
@@ -341,11 +357,13 @@ div div div {
         font-size: 14px;
         border-radius: 3px;
     }
+
     .valor__propiedad:hover {
         text-decoration: none;
         transition: all 0.3s;
         transform: scale(1.09);
     }
+
     .img__carrousel {
         height: 300px;
         width: 300px;
@@ -354,19 +372,23 @@ div div div {
         border-radius: 5px;
         align-items: center;
     }
+
     /*///////// Footer Inicio////////*/
     footer {
         background-color: $color3;
         color: #fff;
         padding: 30px 0;
+
         h3 {
             color: #fff;
             font-size: 18px;
             text-align: center;
         }
+
         p {
             font-size: 12px;
         }
+
         input[type="email"] {
             width: 100%;
             padding: 10px;
@@ -375,6 +397,7 @@ div div div {
             margin-bottom: 10px;
             text-align: start;
         }
+
         button[type="submit"] {
             background-color: $color3;
             color: $color4;
@@ -383,27 +406,32 @@ div div div {
             padding: 10px 20px;
             font-size: 13px;
         }
-    
+
     }
+
     .footerCaja {
         width: 100%;
         height: auto;
         display: grid;
         grid-template-columns: 1fr;
-        
+
 
     }
+
     footer div ul li a {
         color: $color1;
         font-size: 18px !important;
     }
+
     .container p {
         color: $color1;
         font-size: 12px !important;
         text-align: center;
     }
+
     .footerSuscribirse {
         padding: 20px;
+
         p {
             text-align: start;
         }
@@ -412,6 +440,7 @@ div div div {
     div div p {
         text-align: center;
     }
+
     div div div {
         width: 100%;
         height: auto;
@@ -432,12 +461,14 @@ div div div {
         display: grid;
         grid-template-columns: 1fr;
         background-color: $color1;
+
         .img {
             width: 100%;
             background-image: url(./img/equipo.jpg);
             background-position: center;
             background-size: cover;
         }
+
         .descripcion p {
             width: 100%;
             padding: 20px;
@@ -447,6 +478,7 @@ div div div {
             text-shadow: none !important;
             font-family: Verdana, Geneva, Tahoma, sans-serif;
         }
+
         .descripcion h3 {
             width: 100%;
             padding: 15px;
@@ -454,9 +486,11 @@ div div div {
             text-align: center;
         }
     }
+
     .nuestraMision {
         width: 100%;
         text-align: center;
+
         h3 {
             width: 100%;
             padding: 20px;
@@ -464,14 +498,16 @@ div div div {
             text-decoration: underline;
             color: $color1;
         }
+
         p {
             padding: 20px;
             margin-left: 10%;
             margin-right: 10%;
         }
     }
+
     /*////Main Nosotros Fin/////*/
-        /*//// Servicios Inicia ///*/
+    /*//// Servicios Inicia ///*/
     .servicio__titulo {
         padding: 20px;
         width: 100%;
@@ -493,7 +529,6 @@ div div div {
 
     .imgAlquiler {
         background-image: none;
-
     }
 
     .imgSold {
@@ -518,14 +553,14 @@ div div div {
     }
 
     .descripcionSold {
-        @extend .descripcionAlquiler ;
+        @extend .descripcionAlquiler;
         grid-column: 1/2;
         grid-row: 2/3;
 
     }
 
     .descripcionTasacion {
-        @extend .descripcionAlquiler ;
+        @extend .descripcionAlquiler;
         grid-column: 1/2;
         grid-row: 3/4;
 
@@ -699,6 +734,7 @@ div div div {
 
     .imgSold {
         @extend .imgAlquiler;
+
         background-image: url(./img/ventadeporpiedades.jpg);
         grid-column: 1/2;
         grid-row: 3/4;
@@ -722,7 +758,7 @@ div div div {
     }
 
     .descripcionSold {
-        @extend .descripcionAlquiler; 
+        @extend .descripcionAlquiler;
         grid-column: 2/3;
         grid-row: 3/4;
     }
