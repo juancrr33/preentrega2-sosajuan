@@ -874,4 +874,31 @@ button[type=submit] {
   border-radius: 3px;
   padding: 10px 20px;
   cursor: pointer;
-}/*# sourceMappingURL=estilos.css.map */
+}
+
+.derechos-legales {
+  width: 100%;
+  height: auto;
+  font-family: sans-serif;
+  background-color: #f5f8f9;
+}
+.derechos-legales h3 {
+  text-align: center;
+  text-decoration: underline;
+  background-image: linear-gradient(#2841b3, #25355a);
+  color: #f5f8f9;
+  margin: 0;
+  padding: 20px;
+}
+.derechos-legales p {
+  color: #2841b3;
+  padding: 20px;
+}
+.derechos-legales h4 {
+  text-align: start;
+  color: #25355a;
+  text-decoration: underline;
+  padding-left: 10px;
+}
+
+/*# sourceMappingURL=estilos.css.map */

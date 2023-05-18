@@ -1,0 +1,26 @@
+.derechos-legales {
+    width: 100%;
+    height: auto;
+    font-family: sans-serif;
+    background-color: $color1;
+
+
+    h3 {
+        text-align: center;
+        text-decoration: underline;
+        background-image: linear-gradient($color3, $color2);
+        color: $color1;
+        margin: 0;
+        padding: 20px;
+    }
+    p{
+        color: $color3;
+        padding: 20px;
+    }
+    h4{
+        text-align:start;
+        color: $color2;
+        text-decoration: underline;
+        padding-left: 10px;
+    }
+}
