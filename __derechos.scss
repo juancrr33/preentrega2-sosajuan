@@ -1,8 +1,15 @@
+.containerD {
+    width: 100%;
+    height: auto;
+    background-image: linear-gradient(to left top, $color2, $color3, $color2);
+    font-family: sans-serif;
+}
+
 .derechos-legales {
     width: 100%;
     height: auto;
-    font-family: sans-serif;
     background-color: $color1;
+    color: $color1;
 
 
     h3 {
@@ -13,14 +20,61 @@
         margin: 0;
         padding: 20px;
     }
-    p{
-        color: $color3;
+
+    p {
+        color: $color1;
         padding: 20px;
+        text-shadow: 5px 5px 5px black;
     }
-    h4{
-        text-align:start;
-        color: $color2;
+
+    h4 {
+        text-align: start;
+        color: $color1;
         text-decoration: underline;
         padding-left: 10px;
+        text-shadow: 5px 5px 5px black;
     }
+}
+
+@media (min-width: 360px) {
+    .containerD {
+        width: 100%;
+        height: auto;
+        background-image: linear-gradient(to left top, $color2, $color3, $color2);
+        font-family: sans-serif;
+    }
+
+    .derechos-legales {
+        width: 100%;
+        height: auto;
+        background-color: $color1;
+        color: $color1;
+    }
+
+    .derechos-legales h3 {
+        text-align: center;
+        text-decoration: underline;
+        background-image: linear-gradient($color3, $color2);
+        color: $color1;
+        margin: 0;
+        padding: 20px;
+    }
+
+    .derechos-legales p {
+        color: $color1;
+        padding: 20px;
+        text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+    }
+
+    .derechos-legales h4 {
+        text-align: start;
+        color: $color1;
+        text-decoration: underline;
+        padding-left: 10px;
+        text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+    }
+
+}
+@media (min-width: 768px){
+    
 }

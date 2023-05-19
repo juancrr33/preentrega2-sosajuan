@@ -4,6 +4,7 @@
     grid-template-columns: 1fr 1fr;
     grid-gap: 10px;
     background-color: $color1;
+
     .img {
         width: 100%;
         height: auto;
@@ -11,6 +12,7 @@
         background-position: center;
         background-size: cover;
     }
+
     .descripcion p {
         width: 100%;
         height: auto;
@@ -22,6 +24,7 @@
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         box-sizing: border-box;
     }
+
     .descripcion h3 {
         padding: 20px;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -34,6 +37,7 @@
     width: 100%;
     align-items: center;
     text-align: center;
+
     h3 {
         width: 100%;
         padding: 20px;
@@ -41,9 +45,48 @@
         text-decoration: underline;
         color: $color3;
     }
+
     p {
         padding: 20px;
         margin-left: 10%;
         margin-right: 10%;
+    }
+}
+
+@media (max-width: 360px) {
+    .containerN {
+        grid-template-columns: 1fr;
+    }
+
+    .descripcion p {
+        font-size: 14px;
+    }
+
+    .descripcion h3 {
+        font-size: 18px;
+    }
+
+    .nuestraMision p {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+}
+
+@media (max-width: 768px) {
+    .containerN {
+        grid-template-columns: 1fr;
+    }
+
+    .img {
+        margin-bottom: 20px;
+    }
+
+    .descripcion p {
+        font-size: 14px;
+    }
+
+    .nuestraMision p {
+        margin-left: 5%;
+        margin-right: 5%;
     }
 }
